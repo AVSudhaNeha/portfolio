@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body{background:#0d1b2a;color:white;font-family:'Segoe UI',sans-serif;}
+.section{padding:60px 0;}
+.navbar{background:#0d1b2a;border-bottom:1px solid #1b2f45;}
+.nav-link{color:#9fb3c8 !important;}
+.nav-link.active{color:#2ec4b6 !important;}
+.hero{min-height:90vh;display:flex;align-items:center;}
+.hero h1{font-size:60px;}
+.highlight{color:#2ec4b6;}
+.btn-custom{background:#2ec4b6;color:#000;border:none;}
+.btn-outline-custom{border:1px solid #2ec4b6;color:#2ec4b6;}
+.card-custom{background:#162336;border:1px solid rgba(46,196,182,.2);border-radius:15px;}
+.table-custom{background:#162336;border-radius:10px;overflow:hidden;}
+.table-custom th{color:#2ec4b6;}
+.progress{height:8px;background:#333;}
+.progress-bar{background:#2ec4b6;}
+.tag{padding:6px 12px;border-radius:20px;margin:5px;display:inline-block;}
+.input-custom{background:#1b2f45;border:none;color:white;}
+
+/* FIX VISIBILITY */
+.card-custom p,.card-custom h5,.card-custom h6{color:#e6edf3 !important;}
+#about p{color:#cbd5e1 !important;}
+h2,h4,h5{color:#ffffff !important;}
+
+.card-custom:hover{
+border-color:#2ec4b6;
+box-shadow:0 0 15px rgba(46,196,182,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand text-white">Sudha<span class="highlight">Neha</span></a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" onclick="showPage('home')">Home</a></li>
+<li class="nav-item"><a class="nav-link" onclick="showPage('about')">About</a></li>
+<li class="nav-item"><a class="nav-link" onclick="showPage('qual')">Qualifications</a></li>
+<li class="nav-item"><a class="nav-link" onclick="showPage('skills')">Skills</a></li>
+<li class="nav-item"><a class="nav-link" onclick="showPage('cert')">Certifications</a></li>
+<li class="nav-item"><a class="nav-link" onclick="showPage('contact')">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="section page">
+<div class="container hero">
+<div class="row align-items-center">
+<div class="col-md-6">
+<h1>Venkata Sudha <span class="highlight">Neha Addepalli</span></h1>
+<p>Aspiring Software Engineer · Data Enthusiast · Problem Solver</p>
+
+<div class="my-4">
+<button class="btn btn-custom me-2" onclick="showPage('about')">Know Me</button>
+<button class="btn btn-outline-custom" onclick="showPage('contact')">Contact</button>
+</div>
+
+<div class="row text-center">
+<div class="col">9.58 CGPA</div>
+<div class="col">95.49%</div>
+<div class="col">5+ Projects</div>
+<div class="col">4+ Certs</div>
+</div>
+</div>
+
+<div class="col-md-6 text-center">
+<div style="border:4px solid #2ec4b6;border-radius:50%;width:250px;height:250px;margin:auto;display:flex;align-items:center;justify-content:center;font-size:60px;">
+👩‍💼
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section page d-none">
+<div class="container">
+<h2>About Me</h2>
+
+<div class="card card-custom p-4">
+<p>I am a passionate Information Technology student at Vasavi College of Engineering, Hyderabad, with CGPA <span style="color:#2ec4b6;">9.58</span>.</p>
+<p>My interests include AI, DSA, and development.</p>
+<p>I actively contribute to Robotics Club and SWAYAM E-Cell.</p>
+</div>
+
+<div class="row mt-4">
+<div class="col-md-3"><div class="card card-custom p-3 text-center">🎓<h6>CLASS REP</h6></div></div>
+<div class="col-md-3"><div class="card card-custom p-3 text-center">🎤<h6>TOASTMASTERS</h6></div></div>
+<div class="col-md-3"><div class="card card-custom p-3 text-center">🤖<h6>ROBOTICS CLUB</h6></div></div>
+<div class="col-md-3"><div class="card card-custom p-3 text-center">💡<h6>SWAYAM E-CELL</h6></div></div>
+</div>
+</div>
+</div>
+
+<!-- QUALIFICATIONS + PROJECTS + ACHIEVEMENTS -->
+<div id="qual" class="section page d-none">
+<div class="container">
+
+<!-- EDUCATION -->
+<p class="text-info">EDUCATION</p>
+<h2>Academic Background</h2>
+
+<div class="table-responsive mt-4">
+<table class="table table-custom align-middle">
+
+<thead class="table-dark">
+<tr>
+<th>INSTITUTION</th>
+<th>QUALIFICATION</th>
+<th>PERIOD</th>
+<th>SCORE</th>
+<th>STATUS</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>
+<b>Vasavi College of Engineering</b><br>
+<small>Hyderabad, Telangana</small>
+</td>
+<td>B.Tech — Information Technology</td>
+<td>2024–2028</td>
+<td style="color:#2ec4b6;">9.58 CGPA</td>
+<td><span class="tag">Pursuing</span></td>
+</tr>
+
+<tr>
+<td>
+<b>Intermediate (MPC)</b><br>
+</td>
+<td>Math, Physics, Chemistry</td>
+<td>2022–2024</td>
+<td style="color:#2ec4b6;">95.49% (JEE)</td>
+<td><span class="tag">Completed</span></td>
+</tr>
+
+<tr>
+<td>
+<b>Secondary (Class X)</b><br>
+<small>Vowel School</small>
+</td>
+<td>General Studies</td>
+<td>Up to 2022</td>
+<td style="color:#2ec4b6;">9.68 CGPA</td>
+<td><span class="tag">Completed</span></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- PROJECTS -->
+<p class="text-info mt-5">PROJECTS</p>
+<h2>Key Projects</h2>
+
+<div class="table-responsive mt-3">
+<table class="table table-custom">
+
+<thead class="table-dark">
+<tr>
+<th>PROJECT</th>
+<th>TECHNOLOGIES</th>
+<th>DOMAIN</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>AI-Based Voice Risk Detector</td>
+<td>Python, MFCC, Machine Learning</td>
+<td><span class="tag">AI / ML</span></td>
+</tr>
+
+<tr>
+<td>Smart Safe Route & Traffic Assistance</td>
+<td>Python, Navigation APIs, SOS Integration</td>
+<td><span class="tag">Safety Systems</span></td>
+</tr>
+
+<tr>
+<td>Stock Price Predictor</td>
+<td>Java, Moving Average, OOP</td>
+<td><span class="tag">Data Science</span></td>
+</tr>
+
+<tr>
+<td>Social Network Analysis System</td>
+<td>C/Java, Graphs, DSA</td>
+<td><span class="tag">Data Structures</span></td>
+</tr>
+
+<tr>
+<td>Mini Arcade Game Stack</td>
+<td>C, Modular Programming</td>
+<td><span class="tag">Systems</span></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<p class="text-info mt-5">MILESTONES</p>
+<h2>Achievements</h2>
+
+<div class="mt-4">
+
+<div class="card card-custom p-3 mb-3 d-flex justify-content-between flex-row align-items-center">
+<div>
+<h6>JEE Mains</h6>
+<p>Scored <span style="color:#2ec4b6;">95.49 Percentile</span> — strong analytical and logical reasoning skills.</p>
+</div>
+<span class="tag">2024</span>
+</div>
+
+
+<div class="card card-custom p-3 mb-3 d-flex justify-content-between flex-row align-items-center">
+<div>
+<h6>Robotics</h6>
+<p>ASME 3rd prize</p>
+</div>
+<span class="tag">Ongoing</span>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="section page d-none">
+<div class="container">
+
+<!-- STACK -->
+<p class="text-info">STACK</p>
+<h2>Technology Tags</h2>
+
+<div class="mb-4">
+<span class="tag">Python</span>
+<span class="tag">Java</span>
+<span class="tag">C Language</span>
+<span class="tag">JavaScript</span>
+<span class="tag">HTML5</span>
+<span class="tag">CSS3</span>
+<span class="tag">Git / GitHub</span>
+<span class="tag">DSA</span>
+<span class="tag">OOP</span>
+<span class="tag">ML</span>
+<span class="tag">ROS2</span>
+<span class="tag">VS Code</span>
+</div>
+
+<!-- SOFT SKILLS -->
+<p class="text-info mt-4">INTERPERSONAL</p>
+<h2>Soft Skills</h2>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<div class="card card-custom p-3">
+<h6>💡 Problem Solving & Logical Thinking</h6>
+<p>Analytical approach to complex challenges.</p>
+</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<div class="card card-custom p-3">
+<h6>💬 Effective Communication</h6>
+<p>Clear and confident articulation (Toastmasters).</p>
+</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<div class="card card-custom p-3">
+<h6>👥 Leadership & Team Coordination</h6>
+<p>Class Representative experience.</p>
+</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<div class="card card-custom p-3">
+<h6>🔍 Attention to Detail</h6>
+<p>Precise coding and analysis.</p>
+</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<div class="card card-custom p-3">
+<h6>⚡ Adaptability & Fast Learning</h6>
+<p>Quickly learns new technologies.</p>
+</div>
+</div>
+
+<div class="col-md-6 mb-3">
+<div class="card card-custom p-3">
+<h6>⏱ Time Management</h6>
+<p>Balances academics and projects.</p>
+</div>
+</div>
+
+</div>
+
+<!-- TECHNICAL SKILLS -->
+<p class="text-info mt-4">TECHNICAL</p>
+<h2>Technical Skills</h2>
+
+<div class="row">
+
+<!-- LEFT -->
+<div class="col-md-6">
+
+<h6 class="text-info">PROGRAMMING LANGUAGES</h6>
+
+<p>Python <span class="float-end">90%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:90%"></div></div>
+
+<p>Java <span class="float-end">85%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:85%"></div></div>
+
+<p>C <span class="float-end">80%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:80%"></div></div>
+
+<p>JavaScript <span class="float-end">70%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:70%"></div></div>
+
+<h6 class="text-info mt-4">WEB TECHNOLOGIES</h6>
+
+<p>HTML5 <span class="float-end">80%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:80%"></div></div>
+
+<p>CSS3 <span class="float-end">75%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:75%"></div></div>
+
+</div>
+
+<!-- RIGHT -->
+<div class="col-md-6">
+
+<h6 class="text-info">CORE CONCEPTS</h6>
+
+<p>Data Structures & Algorithms <span class="float-end">88%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:88%"></div></div>
+
+<p>Object-Oriented Programming <span class="float-end">85%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:85%"></div></div>
+
+<p>Problem Solving <span class="float-end">92%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:92%"></div></div>
+
+<p>File Handling <span class="float-end">75%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:75%"></div></div>
+
+<h6 class="text-info mt-4">TOOLS & PLATFORMS</h6>
+
+<p>Git & GitHub <span class="float-end">82%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:82%"></div></div>
+
+<p>VS Code <span class="float-end">90%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:90%"></div></div>
+
+<p>Debugging <span class="float-end">85%</span></p>
+<div class="progress mb-3"><div class="progress-bar" style="width:85%"></div></div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- CERTIFICATIONS -->
+<div id="cert" class="section page d-none">
+<div class="container">
+
+<h2 class="text-center mb-5">Certifications</h2>
+
+<div class="row g-4">
+
+<!-- CARD 1 -->
+<div class="col-md-6 col-lg-4">
+<div class="card card-custom p-4 h-100">
+
+<div style="font-size:30px;">🐍</div>
+
+<div class="tag mt-3 mb-3">Python</div>
+
+<h5>Joy of Computing Using Python</h5>
+<p>NPTEL</p>
+<p style="font-size:14px;">Issued: 2025</p>
+
+</div>
+</div>
+
+<!-- CARD 2 -->
+<div class="col-md-6 col-lg-4">
+<div class="card card-custom p-4 h-100">
+
+<div style="font-size:30px;">📊</div>
+
+<div class="tag mt-3 mb-3">Machine Learning</div>
+
+<h5>Programming, DSA Using Python</h5>
+<p>NPTEL</p>
+<p style="font-size:14px;">Issued: 2025</p>
+
+</div>
+</div>
+
+<!-- CARD 3 -->
+<div class="col-md-6 col-lg-4">
+<div class="card card-custom p-4 h-100">
+
+<div style="font-size:30px;">🤖</div>
+
+<div class="tag mt-3 mb-3">Workshop</div>
+
+<h5>ROS2 Workshop Certification</h5>
+<p>Hands-on Workshop</p>
+<p style="font-size:14px;">Issued: 2025</p>
+
+</div>
+</div>
+
+<!-- CARD 4 -->
+<div class="col-md-6 col-lg-4">
+<div class="card card-custom p-4 h-100">
+
+<div style="font-size:30px;">🌐</div>
+
+<div class="tag mt-3 mb-3">Web</div>
+
+<h5>Python Essentials</h5>
+<p>Cisco Networking Academy</p>
+<p style="font-size:14px;">Issued: 2024</p>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section page d-none">
+<div class="container">
+<h2>Contact Me</h2>
+
+<div class="row">
+<div class="col-md-4">
+<p><b>Email:</b> sudhaneha@gmail.com</p>
+<p><b>Location:</b> Hyderabad</p>
+<p><b>LinkedIn:</b> linkedin.com/in/a-v-sudha-neha</p>
+<p><b>GitHub:</b> github.com/AVSudhaNeha</p>
+</div>
+
+<div class="col-md-8">
+<div class="card card-custom p-4">
+<input class="form-control input-custom mb-3" placeholder="Full Name">
+<input class="form-control input-custom mb-3" placeholder="Mobile">
+<input class="form-control input-custom mb-3" placeholder="Email">
+<textarea class="form-control input-custom mb-3" placeholder="Message"></textarea>
+<button class="btn btn-custom w-100">Send Message</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function showPage(id){
+document.querySelectorAll('.page').forEach(p=>p.classList.add('d-none'));
+document.getElementById(id).classList.remove('d-none');
+}
+</script>
+
+</body>
+</html>
